@@ -1,0 +1,395 @@
+
+*,g
+*:before,
+*:after{
+  box-sizing: border-box;
+}
+
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed,
+figure, figcaption, footer, header, hgroup,
+menu, nav, output, ruby, section, summary,
+time, mark, audio, video {
+	margin: 0;
+	padding: 0;
+	border: 0;
+	font-size: 100%;
+	font: inherit;
+	vertical-align: baseline;
+}
+/* HTML5 display-role reset for older browsers */
+article, aside, details, figcaption, figure,
+footer, header, hgroup, menu, nav, section {
+	display: block;
+}
+body {
+	line-height: 1;
+}
+ol, ul {
+	list-style: none;
+}
+blockquote, q {
+	quotes: none;
+}
+blockquote:before, blockquote:after,
+q:before, q:after {
+	content: '';
+	content: none;
+}
+table {
+	border-collapse: collapse;
+	border-spacing: 0;
+}
+
+body {
+  background:
+    0 50px/auto 200px url("../img/cloud.png") repeat-x,
+    top right url("../img/photos/sun.png") no-repeat,
+    bottom/auto 100px url("../img/grass.png") repeat-x;
+  	height: 100vh; margin: 0;
+	font-family: 'Poppins', sans-serif;
+}
+
+header{
+  background:black;
+}
+  
+.container{
+	max-width:1440px;
+	margin:0 auto;
+	position: relative;
+}
+
+.header .container{
+  position:relative;
+  height:100px;
+  justify-content: space-between;
+  display:flex;
+  align-items: center;
+}
+
+.btn-menu{
+	width: 48px;
+	height: 5px;
+	background-color: #fff;
+	border: none;
+	cursor: pointer;
+}
+
+.btn-menu::before,
+.btn-menu::after{
+	content: " ";
+	width: 48px;
+	height: 5px;
+	background-color: #fff;
+	position: absolute;
+	left:0;
+}
+
+.btn-menu::before {
+	top:35px;
+}
+
+.btn-menu::after {
+	top:61px;
+} 
+
+.header_menu{
+	position: fixed;
+	height: 200px;
+	width: 100%;
+	top:100px;
+	left:0;
+	z-index: 2;
+	background: #000;
+	display: flex;
+	align-items: center;
+	visibility: hidden;
+}
+
+.btn-menu:hover .header_menu{
+	visibility: visible;
+}
+
+.header-wrapper{
+	max-width:1440px;
+	margin:0 auto;
+	width: 100%;
+}
+
+.header_list {
+	display: flex;
+	justify-content: space-between;
+	width: 100%;
+}
+
+.header_link{
+	color: #fff;
+	text-transform: uppercase;
+	font-size: 20px;
+	line-height: 32px;
+	text-decoration: none;
+}
+
+.logo{
+  position:absolute;
+  top:50%;
+  left:50%;
+  margin: 0 0 0 -39px;
+}
+
+.btn{
+	font-size: 20px;
+  	line-height: 32px;
+   	text-transform:uppercase;
+	height: 52px;
+}
+
+.header-btn{
+  width:222px;
+  border: 1px solid #fff;
+  background: #000;
+  color: #fff;
+}
+
+.header-btn::before{
+	content: " ";
+	width:222px;
+	height: 52px;
+	position: absolute;
+	top: 24px;
+	right: 0px;
+	z-index: 1;
+	border: 1px solid #000;
+	border-radius: 12px;
+	box-sizing: border-box;
+}
+
+.hero .container{
+	/* height:600px; */
+	position: relative;
+}
+
+.hero-image{
+	background-image: url('../img/main_photo.png');
+	background-size: 1000px 600px;
+	height: 600px;
+	width: 1000px;
+	/* Научится сокращать эту фразу */
+}
+
+.hero-image::after{
+	content: " ";
+	height: 600px;
+	width: 940px;
+	position: absolute;
+	top:0;
+	right: 0%;
+	background: linear-gradient(270deg, #FFFFFF 53.4%, rgba(255, 255, 255, 0) 95.75%);
+}
+	
+.content{
+	width: 500px;
+	position: absolute;
+	top:106px;
+	right:0;
+	text-align: right;
+}
+
+.title{
+	font: 40px bold;
+	padding-bottom: 40px;
+}
+
+.text{
+	font: normal 20px ;
+	line-height: 32px;
+	padding-bottom: 50px;
+}
+
+.hero-btn{
+  width: 280px;
+  border: 2px solid #000;
+  background: #fff;
+  color: #000;  
+}
+
+.hero-btn::before{
+	content: " ";
+	width: 280px;
+	height: 52px;
+	position: absolute;
+	top: 296px;
+	right: 0px;
+	z-index: 1;
+	border: 2px solid #fff;
+	border-radius: 12px;
+	box-sizing: border-box;
+}
+
+.products{
+	background:#000;
+}
+
+.products .container{
+	padding: 60px 30px;
+	display:flex;
+	justify-content: space-evenly;
+	flex-wrap: wrap;
+} 
+
+.box{
+	flex: 0 1 420px;
+	/* width:420px; */
+	height:505px;
+	background:#fff;
+	border-radius: 10px;
+	position: relative;
+	margin-bottom: 60px;
+}
+
+.photo-first{
+	background-image: url('../img/photo-first.png');
+	background-size: 420px 505px;
+	height: 505px;
+	width: 420px;
+}
+
+.photo-middle{
+	background-image: url('../img/photo-middle.png');
+	background-size: 420px 505px;
+	height: 505px;
+	width: 420px;
+}
+
+.photo-last{
+	background-image: url('../img/photo-last.png');
+	background-size: 420px 505px;
+	height: 505px;
+	width: 420px;
+}
+
+.box-details{
+	border: 2px solid #000;
+	border-radius: 10px 0 0 10px; 
+	width:100px;
+	height:80px;
+	background: #fff;
+	position: absolute;
+	top:50%;
+	right:-10px;
+	margin: -40px 0 0;
+}
+
+.box-details *{
+	 visibility: hidden;
+}
+
+.box:hover .box-details {
+	width: 100%;
+	height:505px;
+	top:0;
+	right:0;
+	margin:0;
+}
+
+.box:hover .box-details *{
+	visibility:visible;
+}
+
+.products-content{
+	color:#fff;
+	text-align: center;
+	position: relative;
+}
+
+.products-content .text{
+	padding-bottom: 60px;
+}
+
+.products-content .btn{
+	margin-bottom: 60px;
+}
+
+.products-btn{
+	width: 222px;
+	border: 1px solid #fff;
+	background: #000;
+	color: #fff;
+}
+
+.products-btn::before{
+	content: " ";
+	width: 222px;
+	height: 52px;
+	position: absolute;
+	top:236px;
+	left:50%;
+	transform:translate(-50%, -50%);
+	z-index: 1;
+	border: 1px solid #000;
+	border-radius: 12px;
+	box-sizing: border-box;
+}
+
+.footer .nav {
+	padding:60px 0;	
+} 
+
+.nav a{
+	font-size: 20px;
+	line-height: 32px;
+	color: #000;
+	text-decoration: none;
+}
+
+.nav{
+	display: flex;
+	justify-content: space-between;
+	width: 100%;
+}
+
+/* tablet */
+@media only screen
+and (min-width: 1024px)
+and (max-width: 1439px) {
+	.header .container{
+		padding: 40px;
+	}
+}
+
+/* mobile */
+@media only screen
+and (min-width: 0)
+and (max-width: 1023px) {
+	.header .nav{
+		display: flex;
+		justify-content: space-between;
+		width: 100%;
+	}
+
+	.header .container{
+		padding: 20px;
+	}
+	.header .btn {
+  	display: none;
+	}
+
+	.logo{
+		position: static;
+	}
+
+	.box{
+		flex: 0 1 350px;
+	}
+
+
+}
