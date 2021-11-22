@@ -256,25 +256,23 @@ header{
 	margin-bottom: 60px;
 }
 
-.photo-first{
-	background-image: url('../img/photo-first.png');
-	background-size: 420px 505px;
+.photo{
 	height: 505px;
 	width: 420px;
+	background-size: contain;
+	background-repeat:no-repeat;
+}
+
+.photo-first{
+	background-image: url('../img/photo-first.png');
 }
 
 .photo-middle{
 	background-image: url('../img/photo-middle.png');
-	background-size: 420px 505px;
-	height: 505px;
-	width: 420px;
 }
 
 .photo-last{
-	background-image: url('../img/photo-last.png');
-	background-size: 420px 505px;
-	height: 505px;
-	width: 420px;
+	background-image: url('../img/photo-last.png');	
 }
 
 .box-details{
